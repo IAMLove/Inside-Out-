@@ -1,0 +1,29 @@
+h1#black-cat-info {
+	margin: 100px;
+    color: yellow;
+    display: none;
+    z-index: 1;
+}
+h2#cow-cat-info {
+	margin: 200px;
+    color: blue;
+    display: none;
+    z-index: 1;
+}
+h3#orange-cat-info {
+	margin: 50px;
+    margin-left: 350px;
+    color: green;
+    display: none;
+    z-index: 1;
+}
+div#cats {
+    margin-left: 100px;
+    bottom: 0px;
+    position: absolute;
+}
+div#cats img {
+    display: inline-block;
+    padding-right: 100px;
+    cursor: pointer;
+}

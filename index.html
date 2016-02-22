@@ -1,0 +1,165 @@
+<style id="jsbin-css">
+h1#black-cat-info {
+	margin: 100px;
+    color: yellow;
+    display: none;
+    z-index: 1;
+}
+h2#cow-cat-info {
+	margin: 200px;
+    color: blue;
+    display: none;
+    z-index: 1;
+}
+h3#orange-cat-info {
+	margin: 50px;
+    margin-left: 350px;
+    color: green;
+    display: none;
+    z-index: 1;
+}
+div#cats {
+    margin-left: 100px;
+    bottom: 0px;
+    position: absolute;
+}
+div#cats img {
+    display: inline-block;
+    padding-right: 100px;
+    cursor: pointer;
+}
+</style>
+<p>Interact with the Inside Out characters from Disney!</p>
+
+<h1 id="black-cat-info">I'am Joy, You look Amazing!</h1>
+
+<h2 id="cow-cat-info">I'am Sadness, uuuugh!</h2>
+
+<h3 id="orange-cat-info">I'am Disgust, whatever!</h3>
+
+<div id="cats">
+<img src="https://skypeblogs.files.wordpress.com/2015/06/joy_80_anim_gif.gif?w=450" id="black-cat" />
+ <img src="https://skypeblogs.files.wordpress.com/2015/06/sadness_80_anim_gif.gif?w=450" id="cow-cat" />
+    <img src="https://skypeblogs.files.wordpress.com/2015/06/disgust_80_anim_gif-1.gif?w=450" id="orange-cat" />
+<script id="jsbin-javascript">
+var blackCat = document.getElementById('black-cat');
+blackCat.addEventListener('mouseover', blackCatFun, false);
+blackCat.addEventListener('mouseout', blackCatNormal, false);
+
+var cowCat = document.getElementById('cow-cat');
+cowCat.addEventListener('mousedown', cowCatFun, false);
+cowCat.addEventListener('mouseup', cowCatNormal, false);
+
+var orangeCat = document.getElementById('orange-cat');
+orangeCat.addEventListener('click', orangeCatFun, false);
+orangeCat.addEventListener('dblclick', orangeCatNormal, false);
+
+function blackCatFun() {
+  var info = document.getElementById('black-cat-info');
+  document.body.style.background = '#575757';
+  info.style.display = 'block';
+}
+function blackCatNormal() {
+  var info = document.getElementById('black-cat-info');
+  document.body.style.background = '#FFFFFF';
+  info.style.display = 'none';
+}
+
+function cowCatFun() {
+  var info = document.getElementById('cow-cat-info');
+  document.body.style.background = '#7A378B';
+  info.style.display = 'block';
+}
+function cowCatNormal() {
+  var info = document.getElementById('cow-cat-info');
+  document.body.style.background = '#FFFFFF';
+  info.style.display = 'none';
+}
+
+function orangeCatFun() {
+  var info = document.getElementById('orange-cat-info');
+  document.body.style.background = '#EED2EE';
+  info.style.display = 'block';
+}
+function orangeCatNormal() {
+  var info = document.getElementById('orange-cat-info');
+  document.body.style.background = '#FFFFFF';
+  info.style.display = 'none';
+}
+</script>
+
+<script id="jsbin-source-css" type="text/css">h1#black-cat-info {
+	margin: 100px;
+    color: yellow;
+    display: none;
+    z-index: 1;
+}
+h2#cow-cat-info {
+	margin: 200px;
+    color: blue;
+    display: none;
+    z-index: 1;
+}
+h3#orange-cat-info {
+	margin: 50px;
+    margin-left: 350px;
+    color: green;
+    display: none;
+    z-index: 1;
+}
+div#cats {
+    margin-left: 100px;
+    bottom: 0px;
+    position: absolute;
+}
+div#cats img {
+    display: inline-block;
+    padding-right: 100px;
+    cursor: pointer;
+}</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">var blackCat = document.getElementById('black-cat');
+blackCat.addEventListener('mouseover', blackCatFun, false);
+blackCat.addEventListener('mouseout', blackCatNormal, false);
+
+var cowCat = document.getElementById('cow-cat');
+cowCat.addEventListener('mousedown', cowCatFun, false);
+cowCat.addEventListener('mouseup', cowCatNormal, false);
+
+var orangeCat = document.getElementById('orange-cat');
+orangeCat.addEventListener('click', orangeCatFun, false);
+orangeCat.addEventListener('dblclick', orangeCatNormal, false);
+
+function blackCatFun() {
+  var info = document.getElementById('black-cat-info');
+  document.body.style.background = '#575757';
+  info.style.display = 'block';
+}
+function blackCatNormal() {
+  var info = document.getElementById('black-cat-info');
+  document.body.style.background = '#FFFFFF';
+  info.style.display = 'none';
+}
+
+function cowCatFun() {
+  var info = document.getElementById('cow-cat-info');
+  document.body.style.background = '#7A378B';
+  info.style.display = 'block';
+}
+function cowCatNormal() {
+  var info = document.getElementById('cow-cat-info');
+  document.body.style.background = '#FFFFFF';
+  info.style.display = 'none';
+}
+
+function orangeCatFun() {
+  var info = document.getElementById('orange-cat-info');
+  document.body.style.background = '#EED2EE';
+  info.style.display = 'block';
+}
+function orangeCatNormal() {
+  var info = document.getElementById('orange-cat-info');
+  document.body.style.background = '#FFFFFF';
+  info.style.display = 'none';
+}
+</script>
